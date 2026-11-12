@@ -7,10 +7,10 @@ export class NutzerClient {
   http: HttpClient = inject(HttpClient);
 
   zeigeNutzer(uuid: string) {
-    return this.http.get("http://localhost:8081/nutzer/" + uuid);
+    return this.http.get<Nutzer>("http://localhost:8081/nutzer/" + uuid);
   }
 
-  bearbeiteNutzer(uuid: string,nutzer: Nutzer){
-    return this.http.put("http://localhost:8081/nutzer"+ uuid, nutzer);
+  speichereNutzer(uuid: string, nutzer: Nutzer){
+    return this.http.put("http://localhost:8081/nutzer/"+ uuid, nutzer);
   }
 }

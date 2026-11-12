@@ -1,6 +1,7 @@
 package com.example.nachbarschaftsapp.mapper;
 
 import com.example.nachbarschaftsapp.domain.Nutzer;
+import com.example.nachbarschaftsapp.dto.NutzerDto;
 import com.example.nachbarschaftsapp.entities.NutzerEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -13,4 +14,6 @@ public interface NutzerMapper {
     Nutzer toDomain(NutzerEntity entity);
 
     NutzerEntity toEntity(Nutzer domain);
+
+    NutzerDto toDto(Nutzer nutzer);
 }

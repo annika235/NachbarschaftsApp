@@ -1,4 +1,4 @@
-export interface Koordinaten{
-  laengengrad: number;
-  breitengrad: number;
+export interface Koordinaten {
+  laengengrad: number | null;
+  breitengrad: number | null;
 }
