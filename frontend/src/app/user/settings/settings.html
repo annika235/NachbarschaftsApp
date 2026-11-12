@@ -1,0 +1,8 @@
+<h1>Einstellungen</h1>
+<h2>Persönliche Informationen</h2>
+{{ nutzerService.aktiverNutzer() | json }}
+<form>
+  <input [formField]="nutzerForm.vorname" type="text" placeholder="Vorname"/>
+  <input [formField]="nutzerForm.nachname" type="text" placeholder="Nachname"/>
+</form>
+<button (click)="testBla()">Tessst</button>

@@ -1,0 +1,24 @@
+.bottom-toolbar {
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly !important;
+  flex-wrap: wrap;
+  height: auto !important;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding: 6px 12px !important;
+}
+
+.nav-item mat-icon {
+  margin: 0;
+}
+
+.nav-item.aktiv {
+  color: darkmagenta;
+}
