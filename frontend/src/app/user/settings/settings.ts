@@ -17,8 +17,8 @@ export class Settings implements OnInit {
   nutzer = signal<Nutzer>({vorname: '', nachname: '', standort: {strasse: '', hausnummer:'', plz:'', ort:'', koordinaten:{laengengrad: null, breitengrad: null}}, beitraege: [] });
 
   nutzerForm = form(this.nutzer, (path) => {
-    required(path.vorname, {message: 'Name ist erforderlich'});
-    required(path.nachname, {message: 'Name ist erforderlich'});
+    required(path.vorname, {message: 'Vorname ist erforderlich'});
+    required(path.nachname, {message: 'Nachname ist erforderlich'});
   });
 
   ngOnInit() {
